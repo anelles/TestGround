@@ -2,6 +2,6 @@
 
 import numpy as np
 import astropy
-#from radiotools import coordinatesystems
+from radiotools import coordinatesystems
 
 print("Nothing to do")
