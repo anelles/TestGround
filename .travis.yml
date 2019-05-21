@@ -10,9 +10,8 @@ before_script:
   - unzip /tmp/radiotools.zip
   - echo $PWD
   - echo $PYTHONPATH
-  - export PYTHONPATH=$PYTHONPATH:$PWD/radiotools
+  - export PYTHONPATH=$PWD/radiotools
   - echo $PYTHONPATH
 
 script:
     - TestGround/test/test.py
-    - TestGround/test/validate.sh
