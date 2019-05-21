@@ -5,15 +5,21 @@ python:
 install:
     pip install -r TestGround/test/requirements.txt
 
+addons:
+  apt:
+    packages:
+        - hdf5
+        - gsl
+
 before_script:
   - wget https://github.com/nu-radio/radiotools/archive/master.zip -O /tmp/radiotools.zip
   - unzip /tmp/radiotools.zip
   - mv radiotools-master radiotools
-  - ls $PWD
-  - echo $PWD
-  - echo $PYTHONPATH
   - export PYTHONPATH=$PWD/radiotools
-  - echo $PYTHONPATH
+  - wget https://github.com/nu-radio/NuRadioReco/archive/master.zip -O /tmp/NuRadioReco.zip
+  - unzip /tmp/NuRadioReco.zip
+  - mv NuRadioReco-master NuRadioReco
+  - export PYTHONPATH=$PYTHONPATH:$PWD/NuRadioReco
 
 script:
     - TestGround/test/test.py
