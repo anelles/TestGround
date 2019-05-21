@@ -5,11 +5,6 @@ python:
 install:
     pip install -r TestGround/test/requirements.txt
 
-addons:
-  apt:
-    packages:
-        - hdf5
-        - gsl
 
 before_script:
   - wget https://github.com/nu-radio/radiotools/archive/master.zip -O /tmp/radiotools.zip
