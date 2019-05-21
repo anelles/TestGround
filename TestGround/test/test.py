@@ -7,7 +7,6 @@ from radiotools import coordinatesystems
 from NuRadioReco.utilities import units
 import argparse
 import NuRadioReco.modules.channelGenericNoiseAdder
-from NuRadioMC.simulation import simulation2 as simulation
 import logging
 
 print("Nothing to do")
