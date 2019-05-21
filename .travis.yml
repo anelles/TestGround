@@ -8,7 +8,10 @@ install:
 before_script:
   - wget https://github.com/nu-radio/radiotools/archive/master.zip -O /tmp/radiotools.zip
   - unzip /tmp/radiotools.zip
+  - echo $PWD
+  - echo $PYTHONPATH
   - export PYTHONPATH=$PYTHONPATH:$PWD/radiotools
+  - echo $PYTHONPATH
 
 script:
     - TestGround/test/test.py
