@@ -8,7 +8,8 @@ install:
 before_script:
   - wget https://github.com/nu-radio/radiotools/archive/master.zip -O /tmp/radiotools.zip
   - unzip /tmp/radiotools.zip
-  - ls /tmp/
+  - ls /tmp
+  - ls $PWD
   - echo $PWD
   - echo $PYTHONPATH
   - export PYTHONPATH=$PWD/radiotools
