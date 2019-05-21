@@ -1,6 +1,6 @@
 #
 ###### Requirements without Version Specifiers ######
-yaml
+pyyaml
 numpy
 astropy
 tinydb
